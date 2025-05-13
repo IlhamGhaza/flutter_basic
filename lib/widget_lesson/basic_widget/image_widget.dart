@@ -20,7 +20,7 @@ class ImageWidget extends StatelessWidget {
               width: 200,
             ),
             Image.asset(
-              "assets/images/flutter.png",
+              "assets/images/splash1.png",
               height: 200,
               width: 200,
             ),

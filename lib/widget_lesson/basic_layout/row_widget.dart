@@ -8,12 +8,12 @@ class RowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('JagoFlutter - Row'),
+        title: const Text('PPBM2 - Row'),
         actions: const [],
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(

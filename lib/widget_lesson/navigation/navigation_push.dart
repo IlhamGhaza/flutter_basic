@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import 'navigation_pop.dart';
 
 class NavigationPush extends StatefulWidget {
@@ -15,7 +14,7 @@ class _NavigationPushState extends State<NavigationPush> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FIC - navigation push"),
+        title: const Text("PPBM2 - navigation push"),
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),

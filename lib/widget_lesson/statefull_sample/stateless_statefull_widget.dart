@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StatelessStatefulWidget extends StatefulWidget {
-  const StatelessStatefulWidget({Key? key}) : super(key: key);
+  const StatelessStatefulWidget({super.key});
 
   @override
   State<StatelessStatefulWidget> createState() =>
@@ -13,7 +13,7 @@ class _StatelessStatefulWidgetState extends State<StatelessStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FIC - stateless stateful"),
+        title: const Text("PPBM2 - stateless stateful"),
         actions: const [],
       ),
       body: SingleChildScrollView(
@@ -39,7 +39,7 @@ class ChangeTextWidget extends StatefulWidget {
 }
 
 class _ChangeTextWidgetState extends State<ChangeTextWidget> {
-  String text = 'FIC';
+  String text = 'PPBM2';
   @override
   Widget build(BuildContext context) {
     return Column(

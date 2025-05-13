@@ -15,7 +15,7 @@ class ListViewWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FIC - ListView"),
+        title: const Text("PPBM2 - ListView"),
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),

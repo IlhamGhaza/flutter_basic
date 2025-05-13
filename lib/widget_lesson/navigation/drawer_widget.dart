@@ -12,7 +12,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FIC - Drawer"),
+        title: const Text("PPBM2 - Drawer"),
         actions: const [],
       ),
       endDrawer: Drawer(

@@ -13,7 +13,7 @@ class CircleAvatarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FIC - CircleAvatar"),
+        title: const Text("PPBM2 - CircleAvatar"),
         actions: const [],
       ),
       body: Container(
