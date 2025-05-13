@@ -7,7 +7,7 @@ class PaddingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('JagoFlutter - Padding'),
+        title: const Text('PPBM2 - Padding'),
         actions: const [],
       ),
       body: Container(

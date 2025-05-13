@@ -21,7 +21,7 @@ class WrapWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('JagoFlutter - Wrap'),
+        title: const Text('PPBM2 - Wrap'),
         actions: const [],
       ),
       body: Container(

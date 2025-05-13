@@ -23,6 +23,7 @@ class ListViewWidget extends StatelessWidget {
           children: [
             SizedBox(
               height: 32,
+              //generate horizontal scroll view with listview for categories
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: List.generate(
@@ -57,6 +58,7 @@ class ListViewWidget extends StatelessWidget {
                 ),
               ),
             ),
+            //generate vertical scroll view with listview for categories
             Expanded(
               child: ListView(
                 children: List.generate(
@@ -92,6 +94,7 @@ class ListViewWidget extends StatelessWidget {
                 ),
               ),
             ),
+            //generate vertical scroll view with listview.builder for categories
             Expanded(
               child: ListView.builder(
                 itemCount: categories.length,

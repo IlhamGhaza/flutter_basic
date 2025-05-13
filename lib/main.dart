@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/widget_lesson/basic_layout/center_widget.dart';
 import 'package:flutter_basic/widget_lesson/navigation/sliver_widget.dart';
 
+import 'widget_lesson/basic_form/dialog_wodget.dart';
+import 'widget_lesson/basic_form/form_widget.dart';
 import 'widget_lesson/basic_layout/column_widget.dart';
 import 'widget_lesson/basic_layout/listview_widget .dart';
 import 'widget_lesson/basic_layout/row_widget.dart';
@@ -13,6 +16,9 @@ import 'widget_lesson/basic_widget/text_widget.dart';
 import 'widget_lesson/statefull_sample/stateless_statefull_widget.dart';
 
 void main() {
+  // This line initializes Flutter's core system
+  // It's important to call this before doing certain operations
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -26,8 +32,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: const RowWidget(),
-      home: ListViewWidget(),
+      home: const DialogWiget(),
+      // home: FormWidget(),
     );
   }
 }

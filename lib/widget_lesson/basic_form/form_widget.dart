@@ -11,7 +11,7 @@ class _FormWidgetState extends State<FormWidget> {
   bool isOn = false;
 
   var selected = 'Flutter';
-  final dropdownList = <String>['Flutter', 'Dart', 'Java', 'Scala', 'Python'];
+  final dropdownList = <String>['Flutter', 'Dart', 'Java', 'Golang', 'Python'];
 
   var sex = 'male';
   var isChecked = false;
@@ -21,7 +21,7 @@ class _FormWidgetState extends State<FormWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('JagoFlutter - Form'),
+        title: const Text('PPBM2 - Form'),
       ),
       body: SingleChildScrollView(
         child: Container(

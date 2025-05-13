@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../core/snackbar_utils.dart';
+
 class DialogWiget extends StatefulWidget {
   const DialogWiget({Key? key}) : super(key: key);
 
@@ -162,11 +164,14 @@ class _DialogWigetState extends State<DialogWiget> {
             ),
             ElevatedButton(
               onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    backgroundColor: Colors.blue,
-                    content: Text('Your request is successful'),
-                  ),
+                SnackbarUtils(
+                  text: 'Success',
+                  backgroundColor: Colors.blue,
+                ).showSuccessSnackBar(
+                  context,
+                  // actionLabel: 'UNDO',
+                  //     onActionPressed: () {
+                  // }
                 );
               },
               child: const Text('Open snackbar'),

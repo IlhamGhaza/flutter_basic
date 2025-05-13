@@ -7,7 +7,7 @@ class AspectRatioWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('JagoFlutter - Aspect Ratio'),
+        title: const Text('PPBM2 - Aspect Ratio'),
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../core/snackbar_utils.dart';
+
 class StatelessStatefulWidget extends StatefulWidget {
   const StatelessStatefulWidget({super.key});
 
@@ -50,6 +52,15 @@ class _ChangeTextWidgetState extends State<ChangeTextWidget> {
             String newText = DateTime.now().toIso8601String();
             setState(() {
               text = newText;
+            });
+            SnackbarUtils(
+              text: '$text - Stateful',
+              backgroundColor: Colors.green,
+            ).showSuccessSnackBar(context, actionLabel: 'UNDO',
+                onActionPressed: () {
+              setState(() {
+                text = 'PPBM2';
+              });
             });
           },
           child: const Text('Change Text'),
