@@ -19,6 +19,7 @@ class _DialogWigetState extends State<DialogWiget> {
       body: Container(
         padding: const EdgeInsets.all(10.0),
         child: Column(
+          spacing: 20,
           children: [
             ElevatedButton(
               onPressed: () async {
@@ -164,6 +165,19 @@ class _DialogWigetState extends State<DialogWiget> {
             ),
             ElevatedButton(
               onPressed: () {
+                //scaffold
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    backgroundColor: Colors.green,
+                    content: Text('Yay! A SnackBar!',
+                        style: TextStyle(color: Colors.white)),
+                  ),
+                );
+              },
+              child: const Text('Open snackbar'),
+            ),
+            ElevatedButton(
+              onPressed: () {
                 SnackbarUtils(
                   text: 'Success',
                   backgroundColor: Colors.blue,
@@ -174,7 +188,7 @@ class _DialogWigetState extends State<DialogWiget> {
                   // }
                 );
               },
-              child: const Text('Open snackbar'),
+              child: const Text('Open Custom snackbar'),
             ),
           ],
         ),
